@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            display: inline-block;
+            columns: 2;
+            gap: 5px;
+        }
+        form {
+            position: relative;
+            right: -60%;
+        }
+        nav{
+            background-color: hsl(180, 25%, 20%);
+            color: whitesmoke;
+        }
+        select{
+            border: none;
+        }
+        .button{
+            border: 1px solid green;
+            color: green;
+            background-color: hsl(180, 25%, 20%);
+            height: 20px;
+            width: 40px;
+            border-radius: 2px;
+            padding: 3px 3px;
+            text-decoration: none;
+        }
+        .button:hover{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section>
+            <ul>
+                <li style="font-size: 1.5em">Navbar</li>
+                <li>Home</li>
+                <li>Link</li>
+                <li><label id="nav-drop">Dropdown</label>
+                    <select name="Dropdown" aria-labelledby="nav-drop" disabled>
+                        <option value="0">About Us</option>
+                        <option value="1">Contact Us</option>
+                        <option value="2">Shop Now</option>
+                    </select>
+                </li>
+                <li><form method="get">
+                <input type="search" name="search" placeholder="Search">
+                <a type="button" class="button" href="#">Search</a>
+                </form></li>
+            </ul>
+        </section>
+    </nav>
+</body>
+
+<!--Please I did not really understand this exercise. Can you help me with it? 
+Thanks in advance.-->
+</html>
